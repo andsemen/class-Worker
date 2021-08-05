@@ -63,7 +63,7 @@ class Worker {
     }
 
     if (numb <= 0) {
-      throw new Eror("Payment have to be more then 0");
+      throw new RangeError("Payment have to be more then 0");
     }
 
     return (this._paymentPerDay = numb);
